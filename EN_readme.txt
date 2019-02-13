@@ -14,6 +14,9 @@ Ver.201809
 
 [Update history]
 -----------
+2019/02/13:
+- Correspond to Dynamic Ads for Display
+
 2018/09/19:
 - V201809 Correspond to site Retargeting enhancement.
 - V201809 Correspond to period of performance data available changed.
@@ -122,6 +125,7 @@ The following programs are stored.
 - BulkUploadSample.php        : Sample of upload process via BulkService.
 - ConversionTrackerSample.php : Sample of Mutate operation for conversion information via ConversionTrackerService.
 - DictionarySample.php        : Sample of Get operation for LOCATION data, rejected reasons, target setting data, OS version data, image format data for ads via DictionaryService.
+- FeedDataSample.php          : Sample of Get and Mutate operation via FeedHolderService, and upload process via FeedDataService.
 - MediaSample.php             : Sample of ad creation of Image ads, which MediaService Added to AdSample.php.
 - ReportDownloadSample.php    : Sample of Report download via ReportDefinitionService and ReportService.
 - RetargetingSample.php       : Sample of Retargeting via RetargetingTagService and RetargetingListService.
@@ -136,10 +140,10 @@ The following programs are stored.
 - SoapUtils.class.php      : Sample and other common process of Get operation request via LocationService.
 
 [download directory]
-It stores the downloaded file when you execute ReportDownloadSample, BulkDownloadSample, BulkUploadSample or AuditLogDownloadSample.
+It stores the downloaded file when you execute FeedDataSample, ReportDownloadSample, BulkDownloadSample, BulkUploadSample or AuditLogDownloadSample.
 
 [upload directory]
-It stores the upload file when you execute MediaSample, BulkUploadSample, FeedUploadSample or VideoSample.
+It stores the upload file when you execute FeedDataSample, MediaSample, BulkUploadSample, FeedUploadSample or VideoSample.
 
 
 --------------------------------
@@ -174,12 +178,13 @@ Execute each sample program.
 $ php src/AccountSample.php
 $ php src/AccountAdProductSample.php
 $ php src/AdSample.php
-$ php src/BalanceSample.php
+$ php src/AuditLogDownloadSample.php
 $ php src/BalanceSample.php
 $ php src/BulkDownloadSample.php
 $ php src/BulkUploadSample.php
 $ php src/ConversionTrackerSample.php
 $ php src/DictionarySample.php
+$ php src/FeedDataSample.php
 $ php src/MasterDataSample.php
 $ php src/MediaSample.php
 $ php src/ReportDownloadSample.php
@@ -197,4 +202,5 @@ File name is fixed in each sample program.
 
  - In case of MediaSample.php       : SampleMedia.jpg
  - In case of BulkUploadSample.php  : SampleBulkUpload.csv
- - In case of VideoSample.php       : SampleVideoUpload.csv
+ - In case of FeedDataSample.php    : SampleFeedUpload.zip
+ - In case of VideoSample.php       : SampleVideoUpload.mp4
