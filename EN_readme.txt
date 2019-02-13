@@ -14,6 +14,9 @@ Ver.201806
 
 [Update history]
 -----------
+2019/02/13:
+- Correspond to Dynamic Ads for Display
+
 2018/06/20:
 - V201806 Add
 
@@ -128,10 +131,10 @@ The following programs are stored.
 - SoapUtils.class.php      : Sample and other common process of Get operation request via LocationService.
 
 [download directory]
-It stores the downloaded file when you execute ReportDownloadSample, BulkDownloadSample, BulkUploadSample or AuditLogDownloadSample.
+It stores the downloaded file when you execute FeedDataSample, ReportDownloadSample, BulkDownloadSample, BulkUploadSample or AuditLogDownloadSample.
 
 [upload directory]
-It stores the upload file when you execute MediaSample, BulkUploadSample, FeedUploadSample or VideoSample.
+It stores the upload file when you execute FeedDataSample, MediaSample, BulkUploadSample, FeedUploadSample or VideoSample.
 
 
 --------------------------------
@@ -166,12 +169,13 @@ Execute each sample program.
 $ php src/AccountSample.php
 $ php src/AccountAdProductSample.php
 $ php src/AdSample.php
-$ php src/BalanceSample.php
+$ php src/AuditLogDownloadSample.php
 $ php src/BalanceSample.php
 $ php src/BulkDownloadSample.php
 $ php src/BulkUploadSample.php
 $ php src/ConversionTrackerSample.php
 $ php src/DictionarySample.php
+$ php src/FeedDataSample.php
 $ php src/MasterDataSample.php
 $ php src/MediaSample.php
 $ php src/ReportDownloadSample.php
@@ -189,4 +193,5 @@ File name is fixed in each sample program.
 
  - In case of MediaSample.php       : SampleMedia.jpg
  - In case of BulkUploadSample.php  : SampleBulkUpload.csv
- - In case of VideoSample.php       : SampleVideoUpload.csv
+ - In case of FeedDataSample.php    : SampleFeedUpload.zip
+ - In case of VideoSample.php       : SampleVideoUpload.mp4
